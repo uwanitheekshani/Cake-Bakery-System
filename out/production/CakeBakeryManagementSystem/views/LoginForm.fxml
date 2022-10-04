@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LogInContext" prefHeight="300.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Pane layoutX="204.0" prefHeight="393.0" prefWidth="396.0">
+         <children>
+            <ImageView fitHeight="393.0" fitWidth="396.0" layoutX="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/assortment-pieces-cake.jpg" />
+               </image>
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="60.0" layoutX="181.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/security.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#34495e" height="279.0" layoutX="53.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="317.0">
+               <effect>
+                  <BoxBlur height="255.0" width="75.89" />
+               </effect>
+            </Rectangle>
+            <Button fx:id="btnLogin" layoutX="173.0" layoutY="278.0" mnemonicParsing="false" onAction="#logInOnAction" prefHeight="36.0" prefWidth="104.0" style="-fx-background-color: #f39c12;" text="Log In" textFill="#1b2c3c">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtUserName" layoutX="84.0" layoutY="126.0" prefHeight="30.0" prefWidth="282.0" />
+            <Label layoutX="84.0" layoutY="84.0" text="User Name" textFill="#eae5e5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="182.0" text="Password" textFill="#eae5e5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pwdPassword" layoutX="84.0" layoutY="221.0" prefHeight="30.0" prefWidth="282.0" />
+            <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="43.0" layoutY="78.0" pickOnBounds="true" style="-fx-background-color: white;">
+               <image>
+                  <Image url="@../asserts/user%20(1).png" />
+               </image></ImageView>
+            <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="43.0" layoutY="179.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/padlock.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="14.0" text="Welcome Back" textFill="#403939">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="371.0" text="Email: goldstarcakebakery@gmail.com">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane fx:id="pane1" layoutX="-1.0" prefHeight="393.0" prefWidth="205.0" style="-fx-border-color: #6c5ce7; -fx-background-color: #0984e3;">
+         <children>
+            <Label layoutX="16.0" layoutY="8.0" prefHeight="19.0" prefWidth="103.0" text="Welcome to" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="27.0" prefHeight="19.0" prefWidth="76.0" text="GoldStar" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="46.0" prefHeight="19.0" prefWidth="111.0" text="Cake Bakery" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="118.0" layoutX="44.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/cake.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="371.0" text="Tel: 071-8763452">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane fx:id="pane2" layoutX="9.0" layoutY="10.0" prefHeight="393.0" prefWidth="205.0" style="-fx-border-color: #6c5ce7; -fx-background-color: #636e72;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="395.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="16.0" layoutY="8.0" prefHeight="19.0" prefWidth="103.0" text="Welcome to" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="27.0" prefHeight="19.0" prefWidth="76.0" text="GoldStar" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="46.0" prefHeight="19.0" prefWidth="111.0" text="Cake Bakery" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="118.0" layoutX="44.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/cake.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="371.0" text="Tel: 071-8763452">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pane3" layoutX="19.0" layoutY="20.0" prefHeight="393.0" prefWidth="205.0" style="-fx-border-color: #6c5ce7; -fx-background-color: #e17055;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="395.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="16.0" layoutY="8.0" prefHeight="19.0" prefWidth="103.0" text="Welcome to" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="27.0" prefHeight="19.0" prefWidth="76.0" text="GoldStar" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="46.0" prefHeight="19.0" prefWidth="111.0" text="Cake Bakery" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="118.0" layoutX="44.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/cake.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="371.0" text="Tel: 071-8763452">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="pane4" layoutX="29.0" layoutY="30.0" prefHeight="393.0" prefWidth="205.0" style="-fx-border-color: #6c5ce7; -fx-background-color: #e67e22;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="395.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="16.0" layoutY="8.0" prefHeight="19.0" prefWidth="103.0" text="Welcome to" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="27.0" prefHeight="19.0" prefWidth="76.0" text="GoldStar" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="46.0" prefHeight="19.0" prefWidth="111.0" text="Cake Bakery" textFill="#3c2626">
+               <font>
+                  <Font name="Bell MT" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="100.0" fitWidth="118.0" layoutX="44.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/cake.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="25.0" layoutY="371.0" text="Tel: 071-8763452">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

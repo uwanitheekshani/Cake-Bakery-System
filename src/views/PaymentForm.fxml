@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paymentContext" prefHeight="675.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <Label layoutX="124.0" layoutY="20.0" text="Payment Form">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="111.0" layoutY="86.0" prefHeight="0.0" prefWidth="1054.0" style="-fx-border-color: black;" />
+      <TableView fx:id="tblPayment" layoutX="38.0" layoutY="195.0" prefHeight="370.0" prefWidth="999.0">
+         <columns>
+            <TableColumn fx:id="colPayId" prefWidth="178.0" text="Payment Id" />
+            <TableColumn fx:id="colPayDet" prefWidth="319.0" text="Payment Details" />
+            <TableColumn fx:id="colPayMthd" prefWidth="284.0" text="Payment Method" />
+            <TableColumn fx:id="colDate" prefWidth="217.0" text="Date" />
+         </columns>
+      </TableView>
+      <Button layoutX="1037.0" layoutY="31.0" mnemonicParsing="false" onAction="#LogOutOnAction" style="-fx-background-color: #0984e3;" text="Log Out" textFill="#1e1d1d">
+         <effect>
+            <DropShadow color="#ae9696" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="62.0" fitWidth="67.0" layoutX="27.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/payment-method.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="38.0" layoutY="137.0" text="Load All Payments" textFill="#9e1414">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

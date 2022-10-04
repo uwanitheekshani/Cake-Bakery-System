@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="reportFormContext" prefHeight="675.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JasperReportsController">
+   <children>
+      <Label layoutX="178.0" layoutY="26.0" prefHeight="47.0" prefWidth="276.0" text="Reports Form">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="339.0" layoutY="338.0" mnemonicParsing="false" onAction="#sqlReportOnAction" prefHeight="70.0" prefWidth="619.0" style="-fx-background-color: #00b894;" text="SQL Report">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="339.0" layoutY="223.0" mnemonicParsing="false" onAction="#itemQuentityChartOnAction" prefHeight="70.0" prefWidth="619.0" style="-fx-background-color: #00b894;" text="Item Quentity Chart">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="339.0" layoutY="456.0" mnemonicParsing="false" onAction="#employeeReportOnAction" prefHeight="70.0" prefWidth="619.0" style="-fx-background-color: #00b894;" text="Employee report">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Separator layoutX="121.0" layoutY="96.0" prefHeight="0.0" prefWidth="1054.0" style="-fx-border-color: black;" />
+      <ImageView fitHeight="62.0" fitWidth="67.0" layoutX="80.0" layoutY="20.0" onMouseClicked="#reportOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/report-min.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

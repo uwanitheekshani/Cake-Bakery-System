@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardContext" prefHeight="725.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <Pane layoutX="155.0" prefHeight="50.0" prefWidth="1245.0" style="-fx-background-color: #34495e;">
+         <children>
+            <Label fx:id="lblTime" layoutX="1090.0" layoutY="11.0" prefHeight="26.0" prefWidth="146.0" text="22:34:40" textFill="#f5eeee">
+               <font>
+                  <Font name="Britannic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUser" layoutX="16.0" layoutY="11.0" onMouseClicked="#userOnMouseClicked" text="USER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="358.0" layoutY="16.0" text="2022-03-15" textFill="#f5eeee">
+               <font>
+                  <Font name="Britannic Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="1034.0" layoutY="14.0" prefHeight="21.0" prefWidth="61.0" text="Time:   " textFill="#fffefe">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="299.0" layoutY="12.0" prefHeight="21.0" prefWidth="61.0" text="Date :" textFill="#fffefe">
+               <font>
+                  <Font name="Bell MT" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblUserName" layoutX="106.0" layoutY="11.0" prefHeight="30.0" prefWidth="166.0" text="User name" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <AnchorPane fx:id="mainContext" layoutX="155.0" layoutY="50.0" prefHeight="675.0" prefWidth="1245.0" style="-fx-background-color: white;" />
+      <Pane prefHeight="724.0" prefWidth="156.0" style="-fx-background-color: #2980b9;">
+         <children>
+            <Circle fx:id="c1" fill="#92a9bf" layoutX="78.0" layoutY="45.0" radius="37.0" stroke="#292961" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 14;" />
+            <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="57.0" layoutY="27.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/oven.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="9.0" layoutY="91.0" prefHeight="27.0" prefWidth="138.0" text="Goldstar Bakery" textFill="#460913">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton id="sidebar" layoutY="123.0" onAction="#dashBoardOnAction" prefHeight="88.0" prefWidth="156.0" style="-fx-background-color: #fdcb6e;" text="DASHBOARD" textFill="#8a3d3d">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.31" radius="19.207500000000003" width="41.52" />
+               </effect>
+            </JFXButton>
+            <JFXButton id="sidebar" layoutY="216.0" onAction="#customerOnAction" prefHeight="67.0" prefWidth="156.0" style="-fx-background-color: #fdcb6e;" text="CUSTOMER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <GaussianBlur radius="0.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton id="sidebar" layoutY="288.0" onAction="#orderOnAction" prefHeight="67.0" prefWidth="156.0" style="-fx-background-color: #fdcb6e;" text="ORDER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.31" radius="19.207500000000003" width="41.52" />
+               </effect>
+            </JFXButton>
+            <JFXButton id="sidebar" layoutY="361.0" onAction="#itemOnAction" prefHeight="67.0" prefWidth="156.0" style="-fx-background-color: #fdcb6e;" text="ITEM">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.31" radius="19.207500000000003" width="41.52" />
+               </effect>
+            </JFXButton>
+            <JFXButton id="sidebar" layoutY="434.0" onAction="#deliverOnAction" prefHeight="67.0" prefWidth="156.0" style="-fx-background-color: #fdcb6e;" text="DELIVER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.31" radius="19.207500000000003" width="41.52" />
+               </effect>
+            </JFXButton>
+            <Separator layoutX="10.0" layoutY="117.0" opacity="0.51" prefHeight="2.0" prefWidth="138.0" style="-fx-background-color: WHITE;" />
+            <JFXButton id="sidebar" layoutX="1.0" layoutY="652.0" onAction="#paymentOnAction" prefHeight="67.0" prefWidth="156.0" style="-fx-background-color: #fdcb6e;" text="PAYMENT">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.31" radius="19.207500000000003" width="41.52" />
+               </effect>
+            </JFXButton>
+            <JFXButton id="sidebar" layoutY="580.0" onAction="#employeeOnAction" prefHeight="67.0" prefWidth="156.0" style="-fx-background-color: #fdcb6e;" text="EMPLOYEE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.31" radius="19.207500000000003" width="41.52" />
+               </effect>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton id="sidebar" layoutY="507.0" onAction="#supplierOnAction" prefHeight="67.0" prefWidth="156.0" style="-fx-background-color: #fdcb6e;" stylesheets="@../asserts/styleSheets/MainSheet.css" text="SUPPLIER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow height="37.31" radius="19.207500000000003" width="41.52" />
+         </effect>
+      </JFXButton>
+   </children>
+   <stylesheets>
+      <URL value="@../asserts/styleSheets/MainSheet.css" />
+      <URL value="@../asserts/styleSheets/stylesheet.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="deliverContext" prefHeight="675.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeliverFormController">
+   <children>
+      <Label layoutX="124.0" layoutY="20.0" text="Deliver Form">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4fb5b2" height="262.0" layoutX="38.0" layoutY="119.0" stroke="BLACK" strokeType="INSIDE" width="434.0">
+         <effect>
+            <Shadow blurType="GAUSSIAN" color="#2980b970" />
+         </effect>
+      </Rectangle>
+      <Separator layoutX="111.0" layoutY="86.0" prefHeight="0.0" prefWidth="1054.0" style="-fx-border-color: black;" />
+      <JFXTextField fx:id="txtDeliverId" labelFloat="true" layoutX="49.0" layoutY="137.0" onAction="#txtDeliverSearchOnAction" onKeyReleased="#textField_key_Released" promptText="Deliver Id">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDelivererName" labelFloat="true" layoutX="49.0" layoutY="199.0" onKeyReleased="#textField_key_Released" promptText="Deliverer Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPhoneNo" labelFloat="true" layoutX="49.0" layoutY="260.0" onKeyReleased="#textField_key_Released" promptText="Phone No">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtVhiNo" labelFloat="true" layoutX="49.0" layoutY="324.0" onKeyReleased="#textField_key_Released" promptText="Vehicle No">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <Button fx:id="btnSaveDeliver" layoutX="502.0" layoutY="292.0" mnemonicParsing="false" onAction="#saveDeliverOnAction" style="-fx-background-color: #00b894;" text="Save Deliver">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblDeliver" layoutX="38.0" layoutY="409.0" prefHeight="236.0" prefWidth="999.0">
+         <columns>
+            <TableColumn fx:id="colDeliId" prefWidth="167.0" text="Deliver Id" />
+            <TableColumn fx:id="colDelivererName" prefWidth="190.0" text="Deliver Name" />
+            <TableColumn fx:id="colPhoneNo" prefWidth="179.0" text="Phone No" />
+            <TableColumn fx:id="colVhiNo" prefWidth="149.0" text="Vehicle No" />
+            <TableColumn fx:id="colDelete" prefWidth="155.0" text="Delete" />
+            <TableColumn fx:id="colUpdate" prefWidth="158.0" text="Update" />
+         </columns>
+      </TableView>
+      <Button layoutX="1037.0" layoutY="31.0" mnemonicParsing="false" onAction="#LogOutOnAction" style="-fx-background-color: #0984e3;" text="Log Out" textFill="#1e1d1d">
+         <effect>
+            <DropShadow color="#ae9696" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="76.0" fitWidth="90.0" layoutX="26.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/delivery-man.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="502.0" layoutY="342.0" mnemonicParsing="false" onAction="#seachOnAction" prefHeight="31.0" prefWidth="339.0" text="Search">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
